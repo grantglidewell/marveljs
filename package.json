@@ -1,11 +1,17 @@
 {
   "name": "marveljs",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/bundle.js",
   "license": "MIT",
   "scripts": {
     "start": "docz dev",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "author": "Grant Glidewell <grant@grantglidewell.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantglidewell/marveljs"
   },
   "dependencies": {
     "react": "^16.9.0",
